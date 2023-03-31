@@ -1,0 +1,17 @@
+.alert{
+    padding: 10px;
+    background-color: rgb(40, 91, 82);
+    color: white;
+}
+.header{
+    padding: 10px 20px;
+}
+.logo{
+    display: flex;
+}
+.logoName{
+    margin-right: 20px;
+}
+.link{
+    margin: auto 10px;
+}
