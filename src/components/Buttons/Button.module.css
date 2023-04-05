@@ -1,0 +1,17 @@
+.but{
+    background-color: black;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    width: 150px;
+    border-radius: 3px;
+}
+
+.Whitebut{
+    background-color: none;
+    padding: 10px 20px;
+    /* color: white; */
+    border: none;
+    width: 200px;
+    border-radius: 3px;
+}

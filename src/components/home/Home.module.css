@@ -1,0 +1,23 @@
+.article1{
+    width: 40%;
+    display: block;
+    padding-right: 30px;
+    /* background-color: grey; */
+    /* background-color: red; */
+}
+article{
+    margin-top: 10px;
+    background-color: aliceblue;
+}
+article h1{
+    font-size: calc(33.75px + 11.25 * ((100vw - 480px) / 800));
+    line-height: 1.244;
+}
+section{
+    padding: 10px 50px;
+}
+.buttonSpaceing{
+    display: flex;
+    width: 375px;
+    justify-content: space-between;
+}
