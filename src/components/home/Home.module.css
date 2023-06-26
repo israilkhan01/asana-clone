@@ -21,3 +21,8 @@ section{
     width: 375px;
     justify-content: space-between;
 }
+.fg{
+    padding: 40px;
+    font-size: 40px;
+    font-weight: 300;
+}

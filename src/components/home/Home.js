@@ -1,8 +1,21 @@
-import React from "react";
+import React,{useEffect} from "react";
 import HomeCss from "./Home.module.css";
 import GetStartButton from "../Buttons/GetStartButton";
 import WhiteButton from "../Buttons/WhiteButton";
+import { useLayoutEffect ,useState} from "react";
 const Home = function() {
+  const [counter,setCounter] = useState(0)
+  useEffect(()=>{
+    //you can remove strict mode wrapping to run it once in development mode
+    console.log("In Development ?it will be printed twice - Inside Use Effect : printed once");
+  },[counter])
+  // useLayoutEffect(()=>{
+  //   console.log("Inside Use Layout Effect");
+  // })
+  const testingHandler = ()=>{
+    console.log("Inside Test")
+    setCounter(counter+1)
+  }
   return (
     <article>
       <section>
@@ -16,14 +29,15 @@ const Home = function() {
             together, faster.
           </p>
           <div className={HomeCss.buttonSpaceing}>
-            <GetStartButton value={"Get Started"}/>
+            <GetStartButton onClick = {testingHandler} value={"Get Started"}/>
             <WhiteButton value={"See how it works"}/>
           </div>
         </div>
 
         <div className={HomeCss.fg}>
-
+          Counter - {counter}
         </div>
+  
       </section>
     </article>
   );
